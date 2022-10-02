@@ -12,8 +12,17 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		720F1B4228E72CC700B24E71 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C34F9F28E3C6DA00DBB004 /* WidgetKit.framework */; };
+		720F1B4328E72CC700B24E71 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C34FA128E3C6DB00DBB004 /* SwiftUI.framework */; };
+		720F1B4628E72CC700B24E71 /* WidgetNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F1B4528E72CC700B24E71 /* WidgetNotification.swift */; };
+		720F1B4828E72CC900B24E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720F1B4728E72CC900B24E71 /* Assets.xcassets */; };
+		720F1B4C28E72CC900B24E71 /* WidgetNotificationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 720F1B4128E72CC700B24E71 /* WidgetNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		720F1B5028E72D5300B24E71 /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C34FB028E3C7B300DBB004 /* ActivityAttributes.swift */; };
 		7226977028E14C380031886A /* DynamicIslandModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7226976F28E14C380031886A /* DynamicIslandModule.swift */; };
 		7226977228E14CE90031886A /* DynamisIslandBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7226977128E14CE90031886A /* DynamisIslandBridge.m */; };
+		72C34FA028E3C6DB00DBB004 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C34F9F28E3C6DA00DBB004 /* WidgetKit.framework */; };
+		72C34FA228E3C6DB00DBB004 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C34FA128E3C6DB00DBB004 /* SwiftUI.framework */; };
+		72C34FB128E3C7B300DBB004 /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C34FB028E3C7B300DBB004 /* ActivityAttributes.swift */; };
 		7699B88040F8A987B510C191 /* libPods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,7 +35,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = RNDynamicIslandDemo;
 		};
+		720F1B4A28E72CC900B24E71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 720F1B4028E72CC700B24E71;
+			remoteInfo = WidgetNotificationExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72C34FAF28E3C6DC00DBB004 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				720F1B4C28E72CC900B24E71 /* WidgetNotificationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* RNDynamicIslandDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNDynamicIslandDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +73,17 @@
 		5709B34CF0A7D63546082F79 /* Pods-RNDynamicIslandDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDynamicIslandDemo.release.xcconfig"; path = "Target Support Files/Pods-RNDynamicIslandDemo/Pods-RNDynamicIslandDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-RNDynamicIslandDemo-RNDynamicIslandDemoTests/Pods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-RNDynamicIslandDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDynamicIslandDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		720F1B4128E72CC700B24E71 /* WidgetNotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetNotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		720F1B4528E72CC700B24E71 /* WidgetNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetNotification.swift; sourceTree = "<group>"; };
+		720F1B4728E72CC900B24E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		720F1B4928E72CC900B24E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7226976E28E14C380031886A /* RNDynamicIslandDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNDynamicIslandDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		7226976F28E14C380031886A /* DynamicIslandModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandModule.swift; sourceTree = "<group>"; };
 		7226977128E14CE90031886A /* DynamisIslandBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamisIslandBridge.m; sourceTree = "<group>"; };
+		72C34F9E28E3C6DA00DBB004 /* WidgetDemoExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetDemoExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C34F9F28E3C6DA00DBB004 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		72C34FA128E3C6DB00DBB004 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		72C34FB028E3C7B300DBB004 /* ActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAttributes.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNDynamicIslandDemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.release.xcconfig"; path = "Target Support Files/Pods-RNDynamicIslandDemo-RNDynamicIslandDemoTests/Pods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -65,6 +103,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-RNDynamicIslandDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720F1B3E28E72CC700B24E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720F1B4328E72CC700B24E71 /* SwiftUI.framework in Frameworks */,
+				720F1B4228E72CC700B24E71 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72C34F9B28E3C6DA00DBB004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72C34FA228E3C6DB00DBB004 /* SwiftUI.framework in Frameworks */,
+				72C34FA028E3C6DB00DBB004 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +156,7 @@
 				7226976F28E14C380031886A /* DynamicIslandModule.swift */,
 				7226976E28E14C380031886A /* RNDynamicIslandDemo-Bridging-Header.h */,
 				7226977128E14CE90031886A /* DynamisIslandBridge.m */,
+				72C34FB028E3C7B300DBB004 /* ActivityAttributes.swift */,
 			);
 			name = RNDynamicIslandDemo;
 			sourceTree = "<group>";
@@ -110,8 +167,20 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-RNDynamicIslandDemo.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.a */,
+				72C34F9F28E3C6DA00DBB004 /* WidgetKit.framework */,
+				72C34FA128E3C6DB00DBB004 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		720F1B4428E72CC700B24E71 /* WidgetNotification */ = {
+			isa = PBXGroup;
+			children = (
+				720F1B4528E72CC700B24E71 /* WidgetNotification.swift */,
+				720F1B4728E72CC900B24E71 /* Assets.xcassets */,
+				720F1B4928E72CC900B24E71 /* Info.plist */,
+			);
+			path = WidgetNotification;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -127,6 +196,7 @@
 				13B07FAE1A68108700A75B9A /* RNDynamicIslandDemo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNDynamicIslandDemoTests */,
+				720F1B4428E72CC700B24E71 /* WidgetNotification */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -141,6 +211,8 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* RNDynamicIslandDemo.app */,
 				00E356EE1AD99517003FC87E /* RNDynamicIslandDemoTests.xctest */,
+				72C34F9E28E3C6DA00DBB004 /* WidgetDemoExtension.appex */,
+				720F1B4128E72CC700B24E71 /* WidgetNotificationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,15 +264,51 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				72C34FAF28E3C6DC00DBB004 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				720F1B4B28E72CC900B24E71 /* PBXTargetDependency */,
 			);
 			name = RNDynamicIslandDemo;
 			productName = RNDynamicIslandDemo;
 			productReference = 13B07F961A680F5B00A75B9A /* RNDynamicIslandDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		720F1B4028E72CC700B24E71 /* WidgetNotificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 720F1B4D28E72CC900B24E71 /* Build configuration list for PBXNativeTarget "WidgetNotificationExtension" */;
+			buildPhases = (
+				720F1B3D28E72CC700B24E71 /* Sources */,
+				720F1B3E28E72CC700B24E71 /* Frameworks */,
+				720F1B3F28E72CC700B24E71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetNotificationExtension;
+			productName = WidgetNotificationExtension;
+			productReference = 720F1B4128E72CC700B24E71 /* WidgetNotificationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		72C34F9D28E3C6DA00DBB004 /* WidgetDemoExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72C34FAC28E3C6DC00DBB004 /* Build configuration list for PBXNativeTarget "WidgetDemoExtension" */;
+			buildPhases = (
+				72C34F9A28E3C6DA00DBB004 /* Sources */,
+				72C34F9B28E3C6DA00DBB004 /* Frameworks */,
+				72C34F9C28E3C6DA00DBB004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetDemoExtension;
+			productName = WidgetDemoExtension;
+			productReference = 72C34F9E28E3C6DA00DBB004 /* WidgetDemoExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -208,6 +316,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -216,6 +325,12 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1320;
+					};
+					720F1B4028E72CC700B24E71 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					72C34F9D28E3C6DA00DBB004 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -234,6 +349,8 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNDynamicIslandDemo */,
 				00E356ED1AD99517003FC87E /* RNDynamicIslandDemoTests */,
+				72C34F9D28E3C6DA00DBB004 /* WidgetDemoExtension */,
+				720F1B4028E72CC700B24E71 /* WidgetNotificationExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +369,21 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720F1B3F28E72CC700B24E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720F1B4828E72CC900B24E71 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72C34F9C28E3C6DA00DBB004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +554,25 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				7226977228E14CE90031886A /* DynamisIslandBridge.m in Sources */,
+				72C34FB128E3C7B300DBB004 /* ActivityAttributes.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				7226977028E14C380031886A /* DynamicIslandModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720F1B3D28E72CC700B24E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720F1B4628E72CC700B24E71 /* WidgetNotification.swift in Sources */,
+				720F1B5028E72D5300B24E71 /* ActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72C34F9A28E3C6DA00DBB004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +583,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* RNDynamicIslandDemo */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		720F1B4B28E72CC900B24E71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 720F1B4028E72CC700B24E71 /* WidgetNotificationExtension */;
+			targetProxy = 720F1B4A28E72CC900B24E71 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -495,11 +649,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-RNDynamicIslandDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RNDynamicIslandDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,10 +678,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-RNDynamicIslandDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RNDynamicIslandDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,6 +698,162 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "RNDynamicIslandDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		720F1B4E28E72CC900B24E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNDynamicIslandDemo.WidgetNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		720F1B4F28E72CC900B24E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNDynamicIslandDemo.WidgetNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72C34FAD28E3C6DC00DBB004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetDemo;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNDynamicIslandDemo.WidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72C34FAE28E3C6DC00DBB004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetDemo;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNDynamicIslandDemo.WidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -592,7 +906,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -657,7 +971,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -697,6 +1011,24 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		720F1B4D28E72CC900B24E71 /* Build configuration list for PBXNativeTarget "WidgetNotificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720F1B4E28E72CC900B24E71 /* Debug */,
+				720F1B4F28E72CC900B24E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72C34FAC28E3C6DC00DBB004 /* Build configuration list for PBXNativeTarget "WidgetDemoExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72C34FAD28E3C6DC00DBB004 /* Debug */,
+				72C34FAE28E3C6DC00DBB004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -47,7 +47,27 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Button title="Test Func" onPress={onPressTestFunc} />
+          <Button
+            title="Start Activity"
+            onPress={() =>
+              DynamicIslandModule.startNotificationActivity(
+                'Hoà Phan Dev',
+                'Welcome My Chanel!',
+              )
+            }
+          />
+          <Button
+            title="Update Activity"
+            onPress={() =>
+              DynamicIslandModule.updateNotificationActivity(
+                'Share programming experience!',
+              )
+            }
+          />
+          <Button
+            title="End Activity"
+            onPress={() => DynamicIslandModule.endNotificationActivity()}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
