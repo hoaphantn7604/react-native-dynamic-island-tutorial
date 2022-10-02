@@ -1,5 +1,5 @@
 ## React Native Dynamic Island Tutorial
-How to implement Dynamic Island for React native.
+How to implement Dynamic Island for React native.</br>
 React Native Dynamic Island tutorial
 
 #v0.0.1: create native modules for react native.
