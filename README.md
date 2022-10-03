@@ -1,9 +1,9 @@
 ## React Native Dynamic Island Tutorial
 How to implement Dynamic Island for React native.</br>
-React Native Dynamic Island tutorial
+React Native Dynamic Island tutorial.</br>
 
 ### Documentation
-- Require Xcode 14.1 or high.</br>
+- Require Xcode 14.1 or high. Working on iOS 16.1 or high.</br>
 - Step 1: Build native modules.</br>
 - Step 2: Build Live Activity for Dynamic Island and lock screen.</br>
 - Step 3: Handle action event when click button.</br>
