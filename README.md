@@ -8,8 +8,9 @@ React Native Dynamic Island tutorial.</br>
 - Step 2: Build Live Activity for Dynamic Island and lock screen.</br>
 - Step 3: Handle action event when click button.</br>
 
-#### tag 0.0.1: create native modules for react native.
-#### tag 0.0.2: build Live Activity Simple.
+### Version
+- tag 0.0.1: create native modules for react native.</br>
+- tag 0.0.2: build Live Activity Simple.</br>
 
 ## Video tutorial:
 #### [How to implement Dynamic Island for React native #part1](https://youtu.be/WelhUZhWSGg)
