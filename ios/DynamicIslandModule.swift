@@ -19,7 +19,7 @@ class DynamicIslandModule: NSObject {
   }
   
   @objc(startNotificationActivity:withMessage:)
-  func startNotificationActivity(title: String, message: String) {
+  func startNotificationActivity(title: String, message: String) -> Void {
     if #available(iOS 16.1, *) {
       let initialContentState = NotificationAttributes.ContentState(mesage: message)
       let activityAttributes = NotificationAttributes(title: title)
@@ -35,7 +35,7 @@ class DynamicIslandModule: NSObject {
   }
   
   @objc(updateNotificationActivity:)
-  func updateNotificationActivity(message: String) {
+  func updateNotificationActivity(message: String) -> Void {
     if #available(iOS 16.1, *) {
       
       let notificationStatus = NotificationAttributes.NotificationStatus(mesage: message)
@@ -51,7 +51,7 @@ class DynamicIslandModule: NSObject {
   }
   
   @objc
-  func endNotificationActivity() {
+  func endNotificationActivity() -> Void {
     if #available(iOS 16.1, *) {
       let notificationStatus = NotificationAttributes.NotificationStatus(mesage: "Share programming experience!")
 
