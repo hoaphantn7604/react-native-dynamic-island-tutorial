@@ -53,10 +53,12 @@ struct IconPlayView: View {
 
 struct IconCloseView: View {
   var body: some View {
+    Link(destination: URL(string: "dynamicisland://close")!, label: {
       HStack(alignment: .center) {
-          Image(systemName: "xmark.circle")
-              .foregroundColor(.red)
+        Image(systemName: "xmark.circle")
+          .foregroundColor(.red)
       }
+    })
   }
 }
 
@@ -74,8 +76,8 @@ struct ActionButtontView: View {
     HStack{
       Link(destination: URL(string: "dynamicisland://subscrice")!, label: {
         HStack {
-            Image(systemName: "play.square")
-                .foregroundColor(.white)
+          Image(systemName: "play.square")
+            .foregroundColor(.white)
           Text("Subscrice").font(.caption)
             .bold()
         }
@@ -87,8 +89,8 @@ struct ActionButtontView: View {
       
       Link(destination: URL(string: "dynamicisland://notification")!, label: {
         HStack {
-            Image(systemName: "bell.badge")
-                .foregroundColor(.white)
+          Image(systemName: "bell.badge")
+            .foregroundColor(.white)
           Text("Notification").font(.caption)
             .bold()
         }

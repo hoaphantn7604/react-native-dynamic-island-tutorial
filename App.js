@@ -36,7 +36,16 @@ const App = () => {
   };
 
   const handlerDeepLink = url => {
-    Alert.alert(url);
+    const action = url.replace('dynamicisland://', '');
+
+    switch (action) {
+      case 'close':
+        DynamicIslandModule.endNotificationActivity();
+        break;
+      default:
+        break;
+    }
+    Alert.alert(action);
   };
 
   useEffect(() => {
