@@ -13,6 +13,21 @@ import ActivityKit
 @objc(DynamicIslandModule)
 class DynamicIslandModule: NSObject {
 
+  @objc
+  func constantsToExport() -> [String: Any]! {
+    return [
+      "areActivitiesEnabled": areActivitiesEnabled(),
+    ]
+  }
+  
+  func areActivitiesEnabled() -> Bool {
+    if #available(iOS 16.1, *) {
+      return ActivityAuthorizationInfo.init().areActivitiesEnabled
+    } else {
+      return false
+    }
+  }
+  
   @objc(testFunc:withMessage:withResolver:withRejecter:)
   func testFunc(title: NSString, message: NSString, resolve:RCTPromiseResolveBlock, reject:RCTPromiseRejectBlock) -> Void {
     resolve("\(title) \(message)")

@@ -22,6 +22,8 @@ import {
 const {DynamicIslandModule} = NativeModules;
 import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 
+const {areActivitiesEnabled} = DynamicIslandModule.getConstants();
+
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -48,7 +50,22 @@ const App = () => {
     Alert.alert(action);
   };
 
+  const checkAreActivitiesEnabled = () => {
+    if (!areActivitiesEnabled) {
+      Alert.alert('areActivitiesEnabled is False', 'Open setting', [
+        {
+          text: 'Open Setting',
+          onPress: () => {
+            Linking.openURL('app-settings:');
+          },
+        },
+      ]);
+    }
+  };
+
   useEffect(() => {
+    checkAreActivitiesEnabled();
+
     Linking.getInitialURL()
       .then(url => {
         if (url) {
