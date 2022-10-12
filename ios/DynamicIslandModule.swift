@@ -46,7 +46,6 @@ class DynamicIslandModule: NSObject {
           print("Error requesting motification delivery Live Activity \(error.localizedDescription).")
       }
     }
-   
   }
   
   @objc(updateNotificationActivity:)
@@ -62,7 +61,6 @@ class DynamicIslandModule: NSObject {
           }
       }
     }
-   
   }
   
   @objc
@@ -76,8 +74,6 @@ class DynamicIslandModule: NSObject {
               await activity.end(using:notificationStatus, dismissalPolicy: .default)
           }
       }
-    } else {
-      
     }
   }
   
