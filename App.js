@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -15,6 +15,8 @@ import {
   View,
   NativeModules,
   Button,
+  Linking,
+  Alert,
 } from 'react-native';
 
 const {DynamicIslandModule} = NativeModules;
@@ -32,6 +34,27 @@ const App = () => {
       console.log('res: ', response);
     });
   };
+
+  const handlerDeepLink = url => {
+    Alert.alert(url);
+  };
+
+  useEffect(() => {
+    Linking.getInitialURL()
+      .then(url => {
+        if (url) {
+          handlerDeepLink(url);
+        }
+      })
+      .catch(err => {
+        console.warn('An error occurred', err);
+      });
+    Linking.addEventListener('url', ({url}) => {
+      if (url) {
+        handlerDeepLink(url);
+      }
+    });
+  }, []);
 
   return (
     <SafeAreaView style={backgroundStyle}>

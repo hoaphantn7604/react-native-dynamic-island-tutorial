@@ -72,30 +72,31 @@ struct IconNotifiyView: View {
 struct ActionButtontView: View {
   var body: some View {
     HStack{
-      Button(action: {}) {
-          HStack {
-              Image(systemName: "play.square")
-                  .foregroundColor(.white)
-            Text("Subscrice").font(.caption)
-              .bold()
-          }
-          .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 10))
-          .background(.green)
-          .clipShape(Capsule())
-          .foregroundColor(.white)
-      }
-      Button(action: {}) {
-          HStack {
-              Image(systemName: "bell.badge")
-                  .foregroundColor(.white)
-            Text("Notification").font(.caption)
-              .bold()
-          }
-          .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 10))
-          .background(.red)
-          .clipShape(Capsule())
-          .foregroundColor(.white)
-      }
+      Link(destination: URL(string: "dynamicisland://subscrice")!, label: {
+        HStack {
+            Image(systemName: "play.square")
+                .foregroundColor(.white)
+          Text("Subscrice").font(.caption)
+            .bold()
+        }
+        .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 10))
+        .background(.green)
+        .clipShape(Capsule())
+        .foregroundColor(.white)
+      })
+      
+      Link(destination: URL(string: "dynamicisland://notification")!, label: {
+        HStack {
+            Image(systemName: "bell.badge")
+                .foregroundColor(.white)
+          Text("Notification").font(.caption)
+            .bold()
+        }
+        .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 10))
+        .background(.red)
+        .clipShape(Capsule())
+        .foregroundColor(.white)
+      })
     }
   }
 }
