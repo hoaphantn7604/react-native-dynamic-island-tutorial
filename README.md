@@ -9,8 +9,9 @@ React Native Dynamic Island tutorial.</br>
 - Step 3: Handle action event when click button.</br>
 
 ### Version
-- tag 0.0.1: create native modules for react native.</br>
-- tag 0.0.2: build Live Activity Simple.</br>
+- Tag [v0.0.1](https://github.com/hoaphantn7604/react-native-dynamic-island-tutorial/tree/v0.0.1): Create native modules for react native.</br>
+- Tag [v0.0.2](https://github.com/hoaphantn7604/react-native-dynamic-island-tutorial/tree/v0.0.2): Build Live Activity Simple.</br>
+- Tag [v0.0.3](https://github.com/hoaphantn7604/react-native-dynamic-island-tutorial/tree/v0.0.3): Add Deeplink.</br>
 
 ## Video tutorial:
 #### [How to implement Dynamic Island for React native #part1](https://youtu.be/WelhUZhWSGg)
