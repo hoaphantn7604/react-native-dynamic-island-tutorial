@@ -20,6 +20,12 @@
 		720F1B5028E72D5300B24E71 /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C34FB028E3C7B300DBB004 /* ActivityAttributes.swift */; };
 		7226977028E14C380031886A /* DynamicIslandModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7226976F28E14C380031886A /* DynamicIslandModule.swift */; };
 		7226977228E14CE90031886A /* DynamisIslandBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7226977128E14CE90031886A /* DynamisIslandBridge.m */; };
+		723888B128F7272000EDC130 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C34F9F28E3C6DA00DBB004 /* WidgetKit.framework */; };
+		723888B228F7272000EDC130 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C34FA128E3C6DB00DBB004 /* SwiftUI.framework */; };
+		723888B528F7272000EDC130 /* WidgetFoodOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723888B428F7272000EDC130 /* WidgetFoodOrder.swift */; };
+		723888B728F7272200EDC130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723888B628F7272200EDC130 /* Assets.xcassets */; };
+		723888BB28F7272200EDC130 /* WidgetFoodOrderExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 723888B028F7272000EDC130 /* WidgetFoodOrderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		723888BF28F7272D00EDC130 /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C34FB028E3C7B300DBB004 /* ActivityAttributes.swift */; };
 		72C34FB128E3C7B300DBB004 /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C34FB028E3C7B300DBB004 /* ActivityAttributes.swift */; };
 		7699B88040F8A987B510C191 /* libPods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNDynamicIslandDemo-RNDynamicIslandDemoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -40,6 +46,13 @@
 			remoteGlobalIDString = 720F1B4028E72CC700B24E71;
 			remoteInfo = WidgetNotificationExtension;
 		};
+		723888B928F7272200EDC130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 723888AF28F7272000EDC130;
+			remoteInfo = WidgetFoodOrderExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +63,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				720F1B4C28E72CC900B24E71 /* WidgetNotificationExtension.appex in Embed Foundation Extensions */,
+				723888BB28F7272200EDC130 /* WidgetFoodOrderExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +92,10 @@
 		7226976E28E14C380031886A /* RNDynamicIslandDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNDynamicIslandDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		7226976F28E14C380031886A /* DynamicIslandModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandModule.swift; sourceTree = "<group>"; };
 		7226977128E14CE90031886A /* DynamisIslandBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamisIslandBridge.m; sourceTree = "<group>"; };
+		723888B028F7272000EDC130 /* WidgetFoodOrderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetFoodOrderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		723888B428F7272000EDC130 /* WidgetFoodOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetFoodOrder.swift; sourceTree = "<group>"; };
+		723888B628F7272200EDC130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		723888B828F7272200EDC130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C34F9F28E3C6DA00DBB004 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		72C34FA128E3C6DB00DBB004 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		72C34FB028E3C7B300DBB004 /* ActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAttributes.swift; sourceTree = "<group>"; };
@@ -109,6 +127,15 @@
 			files = (
 				720F1B4328E72CC700B24E71 /* SwiftUI.framework in Frameworks */,
 				720F1B4228E72CC700B24E71 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723888AD28F7272000EDC130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723888B228F7272000EDC130 /* SwiftUI.framework in Frameworks */,
+				723888B128F7272000EDC130 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +198,16 @@
 			path = WidgetNotification;
 			sourceTree = "<group>";
 		};
+		723888B328F7272000EDC130 /* WidgetFoodOrder */ = {
+			isa = PBXGroup;
+			children = (
+				723888B428F7272000EDC130 /* WidgetFoodOrder.swift */,
+				723888B628F7272200EDC130 /* Assets.xcassets */,
+				723888B828F7272200EDC130 /* Info.plist */,
+			);
+			path = WidgetFoodOrder;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +222,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNDynamicIslandDemoTests */,
 				720F1B4428E72CC700B24E71 /* WidgetNotification */,
+				723888B328F7272000EDC130 /* WidgetFoodOrder */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -200,6 +238,7 @@
 				13B07F961A680F5B00A75B9A /* RNDynamicIslandDemo.app */,
 				00E356EE1AD99517003FC87E /* RNDynamicIslandDemoTests.xctest */,
 				720F1B4128E72CC700B24E71 /* WidgetNotificationExtension.appex */,
+				723888B028F7272000EDC130 /* WidgetFoodOrderExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +296,7 @@
 			);
 			dependencies = (
 				720F1B4B28E72CC900B24E71 /* PBXTargetDependency */,
+				723888BA28F7272200EDC130 /* PBXTargetDependency */,
 			);
 			name = RNDynamicIslandDemo;
 			productName = RNDynamicIslandDemo;
@@ -280,6 +320,23 @@
 			productReference = 720F1B4128E72CC700B24E71 /* WidgetNotificationExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		723888AF28F7272000EDC130 /* WidgetFoodOrderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 723888BC28F7272200EDC130 /* Build configuration list for PBXNativeTarget "WidgetFoodOrderExtension" */;
+			buildPhases = (
+				723888AC28F7272000EDC130 /* Sources */,
+				723888AD28F7272000EDC130 /* Frameworks */,
+				723888AE28F7272000EDC130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetFoodOrderExtension;
+			productName = WidgetFoodOrderExtension;
+			productReference = 723888B028F7272000EDC130 /* WidgetFoodOrderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,6 +354,9 @@
 						LastSwiftMigration = 1320;
 					};
 					720F1B4028E72CC700B24E71 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					723888AF28F7272000EDC130 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -317,6 +377,7 @@
 				13B07F861A680F5B00A75B9A /* RNDynamicIslandDemo */,
 				00E356ED1AD99517003FC87E /* RNDynamicIslandDemoTests */,
 				720F1B4028E72CC700B24E71 /* WidgetNotificationExtension */,
+				723888AF28F7272000EDC130 /* WidgetFoodOrderExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -343,6 +404,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				720F1B4828E72CC900B24E71 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723888AE28F7272000EDC130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723888B728F7272200EDC130 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +597,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		723888AC28F7272000EDC130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723888B528F7272000EDC130 /* WidgetFoodOrder.swift in Sources */,
+				723888BF28F7272D00EDC130 /* ActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -540,6 +618,11 @@
 			isa = PBXTargetDependency;
 			target = 720F1B4028E72CC700B24E71 /* WidgetNotificationExtension */;
 			targetProxy = 720F1B4A28E72CC900B24E71 /* PBXContainerItemProxy */;
+		};
+		723888BA28F7272200EDC130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 723888AF28F7272000EDC130 /* WidgetFoodOrderExtension */;
+			targetProxy = 723888B928F7272200EDC130 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -731,6 +814,84 @@
 			};
 			name = Release;
 		};
+		723888BD28F7272200EDC130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetFoodOrder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetFoodOrder;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNDynamicIslandDemo.WidgetFoodOrder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		723888BE28F7272200EDC130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetFoodOrder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetFoodOrder;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNDynamicIslandDemo.WidgetFoodOrder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -894,6 +1055,15 @@
 			buildConfigurations = (
 				720F1B4E28E72CC900B24E71 /* Debug */,
 				720F1B4F28E72CC900B24E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		723888BC28F7272200EDC130 /* Build configuration list for PBXNativeTarget "WidgetFoodOrderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				723888BD28F7272200EDC130 /* Debug */,
+				723888BE28F7272200EDC130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

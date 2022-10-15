@@ -11,42 +11,42 @@ import SwiftUI
 
 @main
 struct NotificationWidgets: WidgetBundle {
-    var body: some Widget {
-
-        if #available(iOS 16.1, *) {
-          WidgetNotification()
-        }
+  var body: some Widget {
+    
+    if #available(iOS 16.1, *) {
+      WidgetNotification()
     }
+  }
 }
 
 struct LockScreenView: View {
   let context: ActivityViewContext<NotificationAttributes>
-    var body: some View {
-      VStack(alignment: .center) {
-        ContentView(context: context)
-        ActionButtontView()
-      }.padding()
-    }
+  var body: some View {
+    VStack(alignment: .center) {
+      ContentView(context: context)
+      ActionButtontView()
+    }.padding()
+  }
 }
 
 struct ContentView: View {
   let context: ActivityViewContext<NotificationAttributes>
-    var body: some View {
-      VStack(alignment: .center) {
-        Text(context.attributes.title)
-          .foregroundColor(.white)
-        Text(context.state.mesage)
-          .foregroundColor(.white)
-      }
+  var body: some View {
+    VStack(alignment: .center) {
+      Text(context.attributes.title)
+        .foregroundColor(.white)
+      Text(context.state.mesage)
+        .foregroundColor(.white)
     }
+  }
 }
 
 struct IconPlayView: View {
   var body: some View {
-      HStack {
-          Image(systemName: "play.square")
-              .foregroundColor(.green)
-      }
+    HStack {
+      Image(systemName: "play.square")
+        .foregroundColor(.green)
+    }
   }
 }
 
@@ -64,10 +64,10 @@ struct IconCloseView: View {
 
 struct IconNotifiyView: View {
   var body: some View {
-      HStack(alignment: .center) {
-          Image(systemName: "bell.badge")
-              .foregroundColor(.red)
-      }
+    HStack(alignment: .center) {
+      Image(systemName: "bell.badge")
+        .foregroundColor(.red)
+    }
   }
 }
 
@@ -104,50 +104,50 @@ struct ActionButtontView: View {
 }
 
 struct WidgetNotification: Widget {
-
-    var body: some WidgetConfiguration {
-      ActivityConfiguration(for: NotificationAttributes.self) { context in
-        // Create the view that appears on the Lock Screen and as a
-        // banner on the Home Screen of devices that don't support the
-        // Dynamic Island.
-        LockScreenView(context: context)
-      } dynamicIsland: { context in
-        // Create the views that appear in the Dynamic Island.
-        DynamicIsland {
-          // Create the expanded view.
-          DynamicIslandExpandedRegion(.leading) {
-         
-          }
+  
+  var body: some WidgetConfiguration {
+    ActivityConfiguration(for: NotificationAttributes.self) { context in
+      // Create the view that appears on the Lock Screen and as a
+      // banner on the Home Screen of devices that don't support the
+      // Dynamic Island.
+      LockScreenView(context: context)
+    } dynamicIsland: { context in
+      // Create the views that appear in the Dynamic Island.
+      DynamicIsland {
+        // Create the expanded view.
+        DynamicIslandExpandedRegion(.leading) {
           
-          DynamicIslandExpandedRegion(.trailing) {
-            IconCloseView()
-          }
-          
-          DynamicIslandExpandedRegion(.center) {
-            ContentView(context: context)
-          }
-          
-          DynamicIslandExpandedRegion(.bottom) {
-            ActionButtontView()
-          }
-        } compactLeading: {
-          // Create the compact leading view.
-          IconPlayView()
-        } compactTrailing: {
-          // Create the compact trailing view.
-          IconNotifiyView()
-        } minimal: {
-          // Create the minimal view.
-          IconPlayView()
         }
-        .keylineTint(.yellow)
+        
+        DynamicIslandExpandedRegion(.trailing) {
+          IconCloseView()
+        }
+        
+        DynamicIslandExpandedRegion(.center) {
+          ContentView(context: context)
+        }
+        
+        DynamicIslandExpandedRegion(.bottom) {
+          ActionButtontView()
+        }
+      } compactLeading: {
+        // Create the compact leading view.
+        IconPlayView()
+      } compactTrailing: {
+        // Create the compact trailing view.
+        IconNotifiyView()
+      } minimal: {
+        // Create the minimal view.
+        IconPlayView()
       }
+      .keylineTint(.yellow)
     }
+  }
 }
 
 struct WidgetNotification_Previews: PreviewProvider {
-    static var previews: some View {
-      IconPlayView()
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
-    }
+  static var previews: some View {
+    IconPlayView()
+      .previewContext(WidgetPreviewContext(family: .systemSmall))
+  }
 }

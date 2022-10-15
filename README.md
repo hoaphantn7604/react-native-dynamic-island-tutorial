@@ -17,7 +17,7 @@ React Native Dynamic Island tutorial.</br>
 #### [How to implement Dynamic Island for React native #part1](https://youtu.be/WelhUZhWSGg)
 #### [How to implement Dynamic Island for React native #part2](https://youtu.be/cdxp_qOb54Y)
 
-![demo](./demo/dynamic_island_for_react_native_tutorial.jpg)
+![demo](./demo/react_native_dynamic_island_tutorial.jpg)
 
 <br><p><a href="https://www.buymeacoffee.com/hoaphantn"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="fateh999" /></a></p><br><br><br>
 

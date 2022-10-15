@@ -22,8 +22,6 @@ import {
 const {DynamicIslandModule} = NativeModules;
 import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 
-const {areActivitiesEnabled} = DynamicIslandModule.getConstants();
-
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -31,41 +29,13 @@ const App = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  const onPressTestFunc = () => {
-    DynamicIslandModule.testFunc('Hello', 'Words!').then(response => {
-      console.log('res: ', response);
-    });
-  };
-
   const handlerDeepLink = url => {
     const action = url.replace('dynamicisland://', '');
-
-    switch (action) {
-      case 'close':
-        DynamicIslandModule.endNotificationActivity();
-        break;
-      default:
-        break;
-    }
+    DynamicIslandModule.endFoodOrderActivity();
     Alert.alert(action);
   };
 
-  const checkAreActivitiesEnabled = () => {
-    if (!areActivitiesEnabled) {
-      Alert.alert('areActivitiesEnabled is False', 'Open setting', [
-        {
-          text: 'Open Setting',
-          onPress: () => {
-            Linking.openURL('app-settings:');
-          },
-        },
-      ]);
-    }
-  };
-
   useEffect(() => {
-    checkAreActivitiesEnabled();
-
     Linking.getInitialURL()
       .then(url => {
         if (url) {
@@ -99,23 +69,24 @@ const App = () => {
           <Button
             title="Start Activity"
             onPress={() =>
-              DynamicIslandModule.startNotificationActivity(
+              DynamicIslandModule.startFoodOrderActivity(
                 'Hoà Phan Dev',
-                'Welcome My Chanel!',
+                'We are bringing great food directly to your kitchen',
+                'https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
               )
             }
           />
           <Button
             title="Update Activity"
             onPress={() =>
-              DynamicIslandModule.updateNotificationActivity(
-                'Share programming experience!',
+              DynamicIslandModule.updateFoodOrderActivity(
+                'Food is any substance consumed to provide nutritional support for an organism',
               )
             }
           />
           <Button
             title="End Activity"
-            onPress={() => DynamicIslandModule.endNotificationActivity()}
+            onPress={() => DynamicIslandModule.endFoodOrderActivity()}
           />
         </View>
       </ScrollView>
