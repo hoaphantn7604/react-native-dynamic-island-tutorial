@@ -19,4 +19,6 @@ React Native Dynamic Island tutorial.</br>
 
 ![demo](./demo/dynamic_island_for_react_native_tutorial.jpg)
 
+<br><p><a href="https://www.buymeacoffee.com/hoaphantn"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="fateh999" /></a></p><br><br><br>
+
 
