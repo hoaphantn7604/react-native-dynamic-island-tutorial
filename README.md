@@ -10,7 +10,7 @@ React Native Dynamic Island tutorial.</br>
 
 ### Version
 - Tag [v0.0.1](https://github.com/hoaphantn7604/react-native-dynamic-island-tutorial/tree/v0.0.1): Create native modules for react native.</br>
-- Tag [v0.0.2](https://github.com/hoaphantn7604/react-native-dynamic-island-tutorial/tree/v0.0.2): Build Live Activity Simple.</br>
+- Tag [v0.0.2](https://github.com/hoaphantn7604/react-native-dynamic-island-tutorial/tree/v0.0.2): Build Live Activities Simple.</br>
 - Tag [v0.0.3](https://github.com/hoaphantn7604/react-native-dynamic-island-tutorial/tree/v0.0.3): Add Deeplink.</br>
 
 ## Video tutorial:
