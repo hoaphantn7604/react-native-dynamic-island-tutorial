@@ -74,11 +74,11 @@ struct IconNotifiyView: View {
 struct ActionButtontView: View {
   var body: some View {
     HStack{
-      Link(destination: URL(string: "dynamicisland://subscrice")!, label: {
+      Link(destination: URL(string: "dynamicisland://subscribe")!, label: {
         HStack {
           Image(systemName: "play.square")
             .foregroundColor(.white)
-          Text("Subscrice").font(.caption)
+          Text("Subscribe").font(.caption)
             .bold()
         }
         .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 10))
