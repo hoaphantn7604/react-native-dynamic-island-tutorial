@@ -15,8 +15,7 @@ React Native Dynamic Island tutorial.</br>
 - Tag [v0.0.4](https://github.com/hoaphantn7604/react-native-dynamic-island-tutorial/tree/v0.0.4): Order Live Activities.</br>
 
 ## Video tutorial:
-#### [How to implement Dynamic Island for React native #part1](https://youtu.be/WelhUZhWSGg)
-#### [How to implement Dynamic Island for React native #part2](https://youtu.be/cdxp_qOb54Y)
+#### [Build Dynamic Island For React Native - Tutorial Step-by-Step](https://www.youtube.com/playlist?list=PLpMCFmfT7cNeAJaCEJbKktudFyuxufr2c)
 
 ![demo](./demo/react_native_dynamic_island_tutorial.jpg)
 
